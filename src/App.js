@@ -91,7 +91,9 @@ class App extends React.Component{
     items.map(item => {
       if(item.key === key) {
         item.text = text;
+        
       }
+      return item;
     })
     this.setState({
       items: items
